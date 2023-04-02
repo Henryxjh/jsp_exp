@@ -2,17 +2,46 @@
     <head>
         <title>个人信息展示页面</title>
         <meta http-equiv="Content-Type" content="text/html: charset=UTF-8">
+        <style type="text/css">
+            h1 {
+                font-family: 宋体;
+                font-size: 40px;
+                color: red;
+            }
+            #base_info {
+                font-size: 20px;
+                color: blue;
+                text-decoration: underline;
+            }
+            #list {
+                color: darkblue;
+            }
+            table {
+                box-shadow: 10px 10px 10px #888888;
+            }
+            td {
+                color: orange;
+                box-shadow: 10px 10px 10px #888888;
+            }
+            body {
+                background-image: url(back.jpg);
+                background-size: cover;
+            }
+            #formVote {
+                line-height: 30px;
+            }
+        </style>
     </head>
     <body>
         <h1 align="center">个人信息展示</h1>
         <hr>
         <table border="1" align="center">
             <tr>
-                <td>
+                <td id="base_info">
                     基本信息：<br>
                     李白（701~762），字太白，号青莲居士，又号“谪仙人”。
                 </td>
-                <td>
+                <td id="list">
                     主要代表诗作：
                     <ul>
                         <li>望庐山瀑布</li>
@@ -33,7 +62,7 @@
             </tr>
         </table>
         <hr>
-        <form action="request.jsp" method="get">
+        <form action="request.jsp" method="get" id="formVote">
             为你最喜欢的诗作投票：<br>
             <input type="radio" name="1" value="A">望庐山瀑布<br>
             <input type="radio" name="1" value="B">行路难<br>
